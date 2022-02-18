@@ -1,4 +1,5 @@
 @import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
 html, body {
     background-image: url("https://i.ibb.co/jfcSqPm/Presentation-Background.png");
@@ -7,22 +8,105 @@ html, body {
     background-size: cover;
     width: 100%;
     height: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 39pt;
+    font-weight: 300;
     text-align: center;
+    color: rgb(0,152,167);
 }
 
-.Center_Element {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+h2 {
+    padding: 0.5%;
+    font-size: 25pt;
+    font-weight: 200;
+    text-align: center;
+    color: rgb(91,91,91);
 }
 
-ul#menu_options li{
-    display: inline;
+h3 {
+    padding: 1%;
+    font-size: 24pt;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+h4 {
+    padding: 1%;
+    font-size: 16pt;
+    font-weight: 400;
+}
+
+h5 {
+    padding: 1%;
+    font-size: 14pt;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+
+h6 {
+    padding: 1%;
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+a {
+    color: rgba(0,152,167,255);
+    font-size: 16pt;
+    font-weight: 500;
+}
+
+#project_viewer {
+    background-image: url("https://i.ibb.co/Jnk9nP5/WIP.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    height: 68%;
+    background-color: rgba(185, 240, 245, 0.5);
+}
+
+#project_description {
+    margin-left: 23%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#nav_bar {
+    position: absolute;
+    width: 100%;
+    bottom: 75px;
+    background-color: rgba(112, 235, 247, 0.3);
+    height: auto;
+}
+
+.table {
+    display: table;
+    margin: 0 auto;
+    padding: 1%;
+    width: 100%;
+}
+
+ul {
+    text-align: center;
+    overflow: hidden;
+}
+
+li {
+    display: inline-block;
+    padding: 0 2.5% 0  2.5%;
+}
+
+button {
+     background-color: rgba(56, 88, 120, 255);
+     font-family: 'Montserrat', sans-serif;
+     padding: 5%;
+     font-size: 14pt;
+     color: white;
+     border-radius: 5pt;
 }
 
 /* Medium devices (tablets, 768px and up) */
