@@ -64,7 +64,6 @@ a {
     background-position: center;
     background-size:contain;
     height: 68%;
-    background-color: rgba(185, 240, 245, 0.5);
 }
 
 #project_description {
@@ -101,12 +100,17 @@ li {
 }
 
 button {
-     background-color: rgba(56, 88, 120, 255);
      font-family: 'Montserrat', sans-serif;
      padding: 5%;
      font-size: 14pt;
-     color: white;
-     border-radius: 5pt;
+     color: black;
+     box-shadow: none;
+     border: 1px solid rgba(56, 88, 120, 255);;
+     background-color: transparent;
+}
+
+button:hover {
+    color: aliceblue;
 }
 
 /* Medium devices (tablets, 768px and up) */
