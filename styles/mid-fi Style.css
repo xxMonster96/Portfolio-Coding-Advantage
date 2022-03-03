@@ -11,15 +11,20 @@ html, body {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
+#reset {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 1%;
     font-size: 39pt;
     font-weight: 300;
     text-align: center;
     color: rgb(0,152,167);
+    background-color: transparent;
+    border: 0;
+    margin: 0 auto;
+    display: block;
 }
 
 h2 {
-    padding: 0.5%;
     font-size: 25pt;
     font-weight: 200;
     text-align: center;
@@ -29,14 +34,16 @@ h2 {
 h3 {
     padding: 1%;
     font-size: 24pt;
-    font-weight: 400;
+    font-weight: 200;
     color: rgb(255, 255, 255);
 }
 
 h4 {
-    padding: 1%;
+    padding-top: 0.5%;
     font-size: 16pt;
-    font-weight: 400;
+    font-weight: 200;
+    text-align: center;
+    color: aliceblue;
 }
 
 h5 {
@@ -44,6 +51,7 @@ h5 {
     font-size: 14pt;
     font-weight: 300;
     color: rgb(255, 255, 255);
+    line-height: 20px;
 }
 
 h6 {
@@ -58,59 +66,159 @@ a {
     font-weight: 500;
 }
 
-#project_viewer {
-    background-image: url("https://i.ibb.co/Jnk9nP5/WIP.png");
-    background-repeat: no-repeat;
+#project_viewerport {
+    background-color: transparent;
     background-position: center;
-    background-size:contain;
-    height: 68%;
+    background-size: contain;
+    height: 65%;
+    margin: auto;
 }
 
-#project_description {
+img {
+    object-fit: fill;
+}
+
+.project_description {
     margin-left: 23%;
     position: absolute;
-    top: 50%;
+    top: 60%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    width: 400px;
 }
+
+.project_navigate_left {
+    width: 0;
+    height: 0;
+    border-right: 100px solid rgba(155, 195, 213, 1);
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    background-color: transparent;
+    border-style: solid;
+    transition: 0.25s;
+    margin: 0%;
+    position: absolute;
+    top: 45%;
+    left: 2%;
+}
+
+.project_navigate_left:hover, #navigate_left:focus {
+    width: 0;
+    height: 0;
+    border-right: 100px solid rgb(85, 122, 138);
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    margin: 0%;
+    position: absolute;
+    top: 45%;
+    left: 2%;
+}
+
+.project_navigate_right {
+    width: 0;
+    height: 0;
+    border-left: 100px solid rgba(155, 195, 213, 1);
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    background-color: transparent;
+    transition: 0.25s;
+    margin: 0%;
+    position: absolute;
+    top: 45%;
+    right: 2%;
+}
+
+.project_navigate_right:hover, #navigate_right:focus {
+    width: 0;
+    height: 0;
+    border-left: 100px solid rgb(85, 122, 138);
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    margin: 0%;
+    position: absolute;
+    top: 45%;
+    right: 2%;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
 #nav_bar {
     position: absolute;
     width: 100%;
     bottom: 75px;
-    background-color: rgba(112, 235, 247, 0.3);
+    background-color: rgba(184, 220, 234, 0.63);
     height: auto;
 }
 
 .table {
     display: table;
     margin: 0 auto;
-    padding: 1%;
+    padding: 0.5%;
     width: 100%;
 }
 
 ul {
     text-align: center;
-    overflow: hidden;
+    overflow: auto;
+    white-space: nowrap;
+    width: auto;
 }
 
 li {
     display: inline-block;
-    padding: 0 2.5% 0  2.5%;
+    vertical-align: middle;
+    padding: 0 2.5% 0 2.5%;
 }
 
-button {
-     font-family: 'Montserrat', sans-serif;
-     padding: 5%;
-     font-size: 14pt;
-     color: black;
-     box-shadow: none;
-     border: 1px solid rgba(56, 88, 120, 255);;
-     background-color: transparent;
+ul button:only-of-type {
+    font-family: 'Montserrat', sans-serif;
+    padding: 5%;
+    font-size: 14pt;
+    font-weight: 300;
+    color: black;
+    border: 1.5px solid rgba(56, 88, 120, 255);;
+    background-color: transparent;
+    text-align: center;
+    line-height: 20px;
+    height: 60px;
+    width: 200px;
+    white-space: normal;
+    transition: 0.25s;
 }
 
-button:hover {
+ul button:only-of-type:hover, ul button:only-of-type:focus {
+    border: inset 0 0 0 2em var(--hover);
+    color:aliceblue;
+    background-color: rgba(77, 148, 200, 0.57);
+}
+
+#contact {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5%;
+    font-size: 18pt;
+    font-weight: 300;
     color: aliceblue;
+    border: 0px;
+    background-color: transparent;
+    transition: 0.25s;
+    position: absolute;
+    bottom: 1.5%;
+    left: 2%;
 }
 
 /* Medium devices (tablets, 768px and up) */

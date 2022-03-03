@@ -3,48 +3,125 @@
 
   <head>
     <title>Portfolio Coding Advantage</title>
-    <meta name="description" content="">
+    <meta name="description" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="./styles/mid-fi Style.css">
+    <script src="carouselBehaviour.js"></script>
   </head>
 
   <body>
-    <h1>Harlen Bertrand</h1>
-
+    <a id="reset">Harlen Bertrand</a>
     <h2>Character Illustrator/Designer</h2>
+    
+    <div id="project_viewerport">
 
-    <div id="project_viewer">
-      <div id="project_description">
-        <h3>Graim - The Hunter</h3>
-        <h5>A character portrait that I was in the <br> process of doing
-        sometime ago when I had freedom.</h5>
+      <div class="project fade">
+        <section class="project_description">
+          <h3>Project Fire</h3>
+          <h5>Project Fire tells the story of a Knight tasked to find a 
+            prince who has run away from his royal roots in search of a 
+            legendary treasure that is said to grant the user any wish 
+            that they want.</h5>
+        </section>
+        <img src="https://i.ibb.co/Jnk9nP5/WIP.png" alt="Graim">
       </div>
+      <div class="project fade">
+        <section class="project_description">
+          <h3>Project Fire</h3>
+          <h5>Project Fire tells the story of a Knight tasked to find a 
+            prince who has run away from his royal roots in search of a 
+            legendary treasure that is said to grant the user any wish 
+            that they want.</h5>
+        </section>
+        <img class="project_thumbnail" src="https://i.ibb.co/Jnk9nP5/WIP.png" alt="Graim">
+      </div>
+
+      <a class="project_navigate_left" onclick="plusSlides(-1)"></a>
+      <a class="project_navigate_right" onclick="plusSlides(1)"></a>
 
     </div>
 
 
     <div id="nav_bar">
+      <h4>Projects</h4>
       <div class="table">
         <ul>
           <li>
-            <button>Portfolio Piece</button>
+            <a onclick="currentSlide(1)">
+              <button id="piece1">Project Fire</button>
+            </a>
           </li>
           <li>
-            <button>Portfolio Piece</button>
+            <a onclick="currentSlide(2)">
+              <button id="piece2">Vigilance</button>
+            </a>
           </li>
           <li>
-            <button>Portfolio Piece</button>
+            <a href="#">
+              <button>Project Arroyo</button>
+            </a>
           </li>
           <li>
-            <button>Portfolio Piece</button>
+            <a href="#"></a>
+              <button>The Children of the Tree</button>
+            </a>
           </li>
           <li>
-            <button>Portfolio Piece</button>
+            <a href="#"></a>
+              <button>Coffee Mockup</button>
+            </a>
+          </li>
+          <li>
+            <a href="#"></a>
+              <button>Design Student Life Animation</button>
+            </a>
+          </li>
+          <li>
+            <a href="#"></a>
+              <button>Tuscany Bag Mockup</button>
+            </a>
+          </li>
+          <li>
+            <a href="#"></a>
+              <button>Nanaimo Crime Stoppers</button>
+            </a>
+          </li>
+          <li>
+            <a href="#"></a>
+              <button>SOCAN Annual Report Mockup</button>
+            </a>
+          </li>
+          <li>
+            <a href="#"></a>
+              <button>Digital Typography</button>
+            </a>
+          </li>
+          <li>
+            <a href="#"></a>
+              <button>Evangeline Wine Mockup</button>
+            </a>
+          </li>
+          <li>
+            <a href="#"></a>
+              <button>Gear S3 Mock Advertisment</button>
+            </a>
+          </li>
+          <li>
+            <a href="#"></a>
+              <button>Yuko Shimizu - Restrospective</button>
+            </a>
+          </li>
+          <li>
+            <a href="#"></a>
+              <button>Total Recall Poster Mockup</button>
+            </a>
           </li>
         </ul>
       </div>
     </div>
+
+    <a id="contact">Contact</a>
 
   </body>
 </html>
