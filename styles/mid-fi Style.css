@@ -66,6 +66,10 @@ a {
     font-weight: 500;
 }
 
+.project {
+    display: none;
+}
+
 #project_viewerport {
     background-color: transparent;
     background-position: center;
