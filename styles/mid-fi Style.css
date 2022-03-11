@@ -68,6 +68,13 @@ a {
     font-weight: 500;
 }
 
+#descriptionTitle {
+    color: rgb(0, 152, 167);
+}
+
+#blackText {
+    color: rgb(0, 0, 0);
+}
 .project {
     display: none;
 }
@@ -175,17 +182,49 @@ a {
     height: auto;
 }
 
+.buttons_navigate_right {
+    width: 0;
+    height: 0;
+    border-left: 50px solid rgb(255, 255, 255);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    background-color: transparent;
+    transition: 0.25s;
+    margin: 0%;
+    position: absolute;
+    top: 45%;
+    right: 11%;
+}
+
+.buttons_navigate_left {
+    width: 0;
+    height: 0;
+    border-right: 50px solid rgb(255, 255, 255);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    background-color: transparent;
+    border-style: solid;
+    transition: 0.25s;
+    margin: 0%;
+    position: absolute;
+    top: 45%;
+    left: 11%;
+}
+
 .table {
     display: table;
     margin: 0 auto;
     padding: 0.5%;
     width: 100%;
+    scroll-snap-align: y mandatory;
+}
+
+.button_fade {
+    scroll-snap-align: start;
 }
 
 ul {
     text-align: center;
-    overflow: auto;
-    white-space: nowrap;
     width: 100%;
 }
 
@@ -217,6 +256,60 @@ ul button:only-of-type:hover, ul button:only-of-type:focus {
     background-color: rgba(77, 148, 200, 0.57);
 }
 
+#externalLinks {
+    background-color: transparent;
+    transition: 0.25s;
+    position: absolute;
+    bottom: 1.5%;
+    right: 2%;
+}
+
+#linked {
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/linkedin_White.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    transition: 0.25s;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#linked:hover, #linked:focus {
+    background-image: url(../images/linkedin_Blue.png);
+}
+
+#insta {
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/instagram_White.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#insta:hover, #insta:focus {
+    background-image: url(../images/instagram_Blue.png);
+}
+
+#art {
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/artstation_White.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#art:hover, #art:focus {
+    background-image: url(../images/artstation_Blue.png);
+}
+
 #contact {
     font-family: 'Montserrat', sans-serif;
     padding: 0.5%;
@@ -229,6 +322,10 @@ ul button:only-of-type:hover, ul button:only-of-type:focus {
     position: absolute;
     bottom: 1.5%;
     left: 2%;
+}
+
+#contact:hover, #contact:focus {
+    color:rgb(0, 0, 0);
 }
 
 /* Medium devices (tablets, 768px and up) */

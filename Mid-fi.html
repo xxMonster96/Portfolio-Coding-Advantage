@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <title>Portfolio Coding Advantage</title>
+    <title>Harlen Bertrand</title>
     <meta name="description" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" href="./styles/mid-fi Style.css">
@@ -10,10 +10,21 @@
   </head>
 
   <body onload = showSlides(1)>
-    <a id="reset">Harlen Bertrand</a>
+    <a onclick="currentSlide(1)" id="reset">Harlen Bertrand</a>
     <h2>Character Illustrator/Designer</h2>
     
     <div id="project_viewerport">
+
+      <div class="project fade">
+        <img class="project_thumbnail" src="./images/Portfolio_portrait.png" alt="Me">
+        <section class="project_description">
+          <h3 id="descriptionTitle">Harlen Bertrand</h3>
+          <h5 id="blackText">I draw, paint, code, do silly voices, and ride a 
+            motorcycle when I have free time! Hence, the leather 
+            jacket. Pretty nifty, innit?
+          </h5>
+        </section>
+      </div>
 
       <div class="project fade">
         <img class="project_thumbnail" src="./images/Project Fire - Thumbnail.jpg" alt="EPA">
@@ -163,83 +174,80 @@
 
     <div id="nav_bar">
       <h4>Projects</h4>
-      <div class="table">
-        <ul>
-          <li>
-            <a onclick="currentSlide(1)">
-              <button id="piece1">Project Fire</button>
-            </a>
-          </li>
-          <li>
-            <a onclick="currentSlide(2)">
-              <button id="piece2">Vigilance</button>
-            </a>
-          </li>
-          <li>
-            <a onclick="currentSlide(3)">
-              <button>Project Arroyo</button>
-            </a>
-          </li>
-          <li>
-            <a onclick="currentSlide(4)">
-              <button>The Children of the Tree</button>
-            </a>
-          </li>
-          <li>
-            <a onclick="currentSlide(5)">
-              <button>Coffee Mockup</button>
-            </a>
-          </li>
-          <li>
-            <a onclick="currentSlide(6)">
-              <button>Design Student Life Animation</button>
-            </a>
-          </li>
-          <li>
-            <a onclick="currentSlide(7)">
-              <button>Tuscany Bag Mockup</button>
-            </a>
-          </li>
-          <li>
-            <a onclick="currentSlide(8)">
-              <button>Nanaimo Crime Stoppers</button>
-            </a>
-          </li>
-          <li>
-            <a onclick="currentSlide(9)">
-              <button>SOCAN Annual Report Mockup</button>
-            </a>
-          </li>
-          <li>
-            <a onclick="currentSlide(10)">
-              <button>Digital Typography</button>
-            </a>
-          </li>
-          <li>
-            <a onclick="currentSlide(11)">
-              <button>Evangeline Wine Mockup</button>
-            </a>
-          </li>
-          <li>
-            <a onclick="currentSlide(12)">
-              <button>Gear S3 Mock Advertisment</button>
-            </a>
-          </li>
-          <li>
-            <a onclick="currentSlide(13)">
-              <button>Yuko Shimizu - Restrospective</button>
-            </a>
-          </li>
-          <li>
-            <a onclick="currentSlide(14)">
-              <button>Total Recall Poster Mockup</button>
-            </a>
-          </li>
-        </ul>
-      </div>
+        <section class="table">
+
+          <section class="button_fade">
+            <ul>
+              <li>
+                <a onclick="currentSlide(2)">
+                  <button>Project Fire</button>
+                </a>
+              </li>
+              <li>
+                <a onclick="currentSlide(3)">
+                  <button>Vigilance</button>
+                </a>
+              </li>
+              <li>
+                <a onclick="currentSlide(4)">
+                  <button>Project Arroyo</button>
+                </a>
+              </li>
+              <li>
+                <a onclick="currentSlide(5)">
+                  <button>The Children of the Tree</button>
+                </a>
+              </li>
+              <li>
+                <a onclick="currentSlide(6)">
+                  <button>Coffee Mockup</button>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <div class="button fade">
+            <ul>
+              <li>
+                <a onclick="currentSlide(2)">
+                  <button>Design Student Life</button>
+                </a>
+              </li>
+              <li>
+                <a onclick="currentSlide(3)">
+                  <button>Tuscany Bag</button>
+                </a>
+              </li>
+              <li>
+                <a onclick="currentSlide(4)">
+                  <button>Crime Stoppers</button>
+                </a>
+              </li>
+              <li>
+                <a onclick="currentSlide(5)">
+                  <button>SOCAN Report</button>
+                </a>
+              </li>
+              <li>
+                <a onclick="currentSlide(6)">
+                  <button>Digital Typography</button>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </section>
+      <a class="buttons_navigate_left" onclick="plusButtons(-1)"></a>
+      <a class="buttons_navigate_right" onclick="plusBUttons(1)"></a>
     </div>
 
-    <a id="contact">Contact</a>
+    <div id="externalLinks">
+      <button id="linked"></button>
+      <button id="insta"></button>
+      <button id="art"></button>
+    </div>
+
+    <button id="contact">Contact</button>
 
   </body>
 </html>

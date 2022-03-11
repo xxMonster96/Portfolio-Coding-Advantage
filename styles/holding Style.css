@@ -1,0 +1,108 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+
+html, body {
+    background-image: url(../images/holding_Background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40vh;
+    padding-top: 25vh;
+}
+
+h2 {
+    font-size: 64pt;
+    font-weight: 100;
+    text-align: center;
+    color: rgb(3, 240, 255);
+    padding-bottom: 1%;
+}
+
+h3 {
+    font-size: 36pt;
+    font-weight: 100;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#contact {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5%;
+    font-size: 18pt;
+    font-weight: 300;
+    color: aliceblue;
+    border: 0px;
+    background-color: transparent;
+    transition: 0.25s;
+    position: absolute;
+    bottom: 1.5%;
+    left: 2%;
+}
+
+#contact:hover, #contact:focus {
+    color:rgb(3, 240, 255);
+}
+
+#externalLinks {
+    background-color: transparent;
+    transition: 0.25s;
+    position: absolute;
+    bottom: 1.5%;
+    right: 2%;
+}
+
+#linked {
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/linkedin_White.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    transition: 0.25s;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#linked:hover, #linked:focus {
+    background-image: url(../images/linkedin_Blue.png);
+}
+
+#insta {
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/instagram_White.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#insta:hover, #insta:focus {
+    background-image: url(../images/instagram_Blue.png);
+}
+
+#art {
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/artstation_White.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#art:hover, #art:focus {
+    background-image: url(../images/artstation_Blue.png);
+}
