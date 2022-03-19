@@ -2,49 +2,252 @@
 <html lang="en">
 
   <head>
-    <title>Portfolio Coding Advantage</title>
-    <meta name="description" content="">
+    <title>Harlen Bertrand</title>
+    <meta name="description" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="./styles/mid-fi Style.css">
+    <script type="text/javascript" src="./js/carouselBehaviour.js"></script>
   </head>
 
-  <body>
-    <h1>Harlen Bertrand</h1>
-
+  <body onload = showSlides(1)>
+    <a onclick="currentSlide(1)" id="reset">Harlen Bertrand</a>
     <h2>Character Illustrator/Designer</h2>
+    
+    <div id="project_viewerport">
 
-    <div id="project_viewer">
-      <div id="project_description">
-        <h3>Graim - The Hunter</h3>
-        <h5>A character portrait that I was in the <br> process of doing
-        sometime ago when I had freedom.</h5>
+      <div class="project fade">
+        <img class="project_thumbnail" src="./images/Portfolio_portrait.png" alt="Me">
+        <section class="project_description">
+          <h3 id="descriptionTitle">Harlen Bertrand</h3>
+          <h5 id="blackText">I draw, paint, code, do silly voices, and ride a 
+            motorcycle when I have free time! Hence, the leather 
+            jacket. Pretty nifty, innit?
+          </h5>
+        </section>
       </div>
+
+      <div class="project fade">
+        <img class="project_thumbnail" src="./images/Project Fire - Thumbnail.jpg" alt="EPA">
+        <section class="project_description">
+          <h3>Project Fire</h3>
+          <h5>Project Fire tells the story of a Knight tasked to find a 
+            prince who has run away from his royal roots in search of a 
+            legendary treasure that is said to grant the user any wish 
+            that they want.
+          </h5>
+        </section>
+      </div>
+      <div class="project fade">
+        <img class="project_thumbnail" src="./images/Project Fire - Thumbnail.jpg" alt="Graim">
+        <section class="project_description">
+          <h3>Vigilance</h3>
+          <h5>Vigilance tells the story of a private investigator who 
+            is investigating a mysterious superhuman that some people call
+            a hero while some call a villain.
+          </h5>
+        </section>
+      </div>
+      <div class="project fade">
+        <img class="project_thumbnail" src="./images/Project-Arroyo - EPA.jpg" alt="EPA">
+        <section class="project_description">
+          <h3>Project Arroyo</h3>
+          <h5>Fallout: Project Arroyo is a fan recreation of Fallout 2 in the
+            Fallout 4 game engine using updated graphics, mechanics, and story
+            telling.
+          </h5>
+        </section>
+      </div>
+      <div class="project fade">
+        <img class="project_thumbnail" src="./images/Project-Arroyo - EPA.jpg" alt="EPA">
+        <section class="project_description">
+          <h3>The Children of the Tree</h3>
+          <h5>The Children of the Tree is a hypothetical video game that tells
+            the story of a fisherman caught up in a world of dreams who is searching
+            for their lost family.
+          </h5>
+        </section>
+      </div>
+      <div class="project fade">
+        <img class="project_thumbnail" src="./images/Project-Arroyo - EPA.jpg" alt="EPA">
+        <section class="project_description">
+          <h3>Coffee Mockup</h3>
+          <h5>This hypothetical coffee brand, named Hypnos & Joe, is a CBD infused
+            sleepytime drink that is meant to do the exact opposite of what Coffee
+            is meant to do.
+          </h5>
+        </section>
+      </div>
+      <div class="project fade">
+        <img class="project_thumbnail" src="./images/Project-Arroyo - EPA.jpg" alt="EPA">
+        <section class="project_description">
+          <h3>Design Student Life Animation</h3>
+          <h5>The design student life is a silly animation that is meant to
+            give a glimpse into what I experienced as a design student and trying
+            to find a balance in work and life.
+          </h5>
+        </section>
+      </div>
+      <div class="project fade">
+        <img class="project_thumbnail" src="./images/Project-Arroyo - EPA.jpg" alt="EPA">
+        <section class="project_description">
+          <h3>Tuscany Bag Mockup</h3>
+          <h5>An assignment at Capilano University that is meant to condense
+            a countries culture into a bag that is given to vistors to the country.</a>
+          </h5>
+        </section>
+      </div>
+      <div class="project fade">
+        <img class="project_thumbnail" src="./images/Project-Arroyo - EPA.jpg" alt="EPA">
+        <section class="project_description">
+          <h3>Nanaimo Crime Stoppers</h3>
+          <h5>The Nanaimo Police Department had approached us students to design
+            a series of posters that is to promote their crime stoppers division
+            and to encourage citizen participation.
+          </h5>
+        </section>
+      </div>
+      <div class="project fade">
+        <img class="project_thumbnail" src="./images/Project-Arroyo - EPA.jpg" alt="EPA">
+        <section class="project_description">
+          <h3>SOCAN Annual Report Mockup</h3>
+          <h5>SOCAN, otherwise known as The Society of Composers, Authors and
+            Publishers is a Canadian Based orangization that is meant to protect
+            artists and their work.
+          </h5>
+        </section>
+      </div>
+      <div class="project fade">
+        <img class="project_thumbnail" src="./images/Project-Arroyo - EPA.jpg" alt="EPA">
+        <section class="project_description">
+          <h3>Digital Typography</h3>
+          <h5>Famous names known throughout the design world are featured in this
+            mocked up magazine spread that are composed of portraits of said designers
+            in the form of ASCII art.
+          </h5>
+        </section>
+      </div>
+      <div class="project fade">
+        <img class="project_thumbnail" src="./images/Project-Arroyo - EPA.jpg" alt="EPA">
+        <section class="project_description">
+          <h3>Evangeline Wine Mockup</h3>
+          <h5>Evangeline is the name of a wine that is meant to instill a sense of
+            elegance and art deco that is named after the creators wife, Evangeline.
+          </h5>
+        </section>
+      </div>
+      <div class="project fade">
+        <img class="project_thumbnail" src="./images/Project-Arroyo - EPA.jpg" alt="EPA">
+        <section class="project_description">
+          <h3>Gear S3 Mock Advertisement</h3>
+          <h5>The Children of the Tree is a hypothetical video game that tells
+            the story of a fisherman caught up in a world of dreams who is searching
+            for their lost family.
+          </h5>
+        </section>
+      </div>
+      <div class="project fade">
+        <img class="project_thumbnail" src="./images/Project-Arroyo - EPA.jpg" alt="EPA">
+        <section class="project_description">
+          <h3>Yuko Shimizu - Restrospective</h3>
+          <h5>Yuko Shimizu is a famed illustrator who has her feet dipped into many
+            different subject matters such as the abstract, the surreal, and the
+            fantasy genre.
+          </h5>
+        </section>
+      </div>
+      <div class="project fade">
+        <img class="project_thumbnail" src="./images/Project-Arroyo - EPA.jpg" alt="EPA">
+        <section class="project_description">
+          <h3>Total Recall Movie Poster</h3>
+          <h5>Total Recall tells the story of Douglas Quiad. A lowly construction
+            worker who becomes the victim of an interplanetary conspiracy that
+            thrusts him into a fight for survival.
+          </h5>
+        </section>
+      </div>
+
+      <a class="project_navigate_left" onclick="plusSlides(-1)"></a>
+      <a class="project_navigate_right" onclick="plusSlides(1)"></a>
 
     </div>
 
 
     <div id="nav_bar">
-      <div class="table">
-        <ul>
-          <li>
-            <button>Portfolio Piece</button>
-          </li>
-          <li>
-            <button>Portfolio Piece</button>
-          </li>
-          <li>
-            <button>Portfolio Piece</button>
-          </li>
-          <li>
-            <button>Portfolio Piece</button>
-          </li>
-          <li>
-            <button>Portfolio Piece</button>
-          </li>
-        </ul>
-      </div>
+      <h4>Projects</h4>
+        <section class="table">
+
+          <section class="button_fade">
+            <ul>
+              <li>
+                <a onclick="currentSlide(2)">
+                  <button>Project Fire</button>
+                </a>
+              </li>
+              <li>
+                <a onclick="currentSlide(3)">
+                  <button>Vigilance</button>
+                </a>
+              </li>
+              <li>
+                <a onclick="currentSlide(4)">
+                  <button>Project Arroyo</button>
+                </a>
+              </li>
+              <li>
+                <a onclick="currentSlide(5)">
+                  <button>The Children of the Tree</button>
+                </a>
+              </li>
+              <li>
+                <a onclick="currentSlide(6)">
+                  <button>Coffee Mockup</button>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <div class="button fade">
+            <ul>
+              <li>
+                <a onclick="currentSlide(2)">
+                  <button>Design Student Life</button>
+                </a>
+              </li>
+              <li>
+                <a onclick="currentSlide(3)">
+                  <button>Tuscany Bag</button>
+                </a>
+              </li>
+              <li>
+                <a onclick="currentSlide(4)">
+                  <button>Crime Stoppers</button>
+                </a>
+              </li>
+              <li>
+                <a onclick="currentSlide(5)">
+                  <button>SOCAN Report</button>
+                </a>
+              </li>
+              <li>
+                <a onclick="currentSlide(6)">
+                  <button>Digital Typography</button>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </section>
+      <a class="buttons_navigate_left" onclick="plusButtons(-1)"></a>
+      <a class="buttons_navigate_right" onclick="plusBUttons(1)"></a>
     </div>
+
+    <div id="externalLinks">
+      <button id="linked"></button>
+      <button id="insta"></button>
+      <button id="art"></button>
+    </div>
+
+    <button id="contact">Contact</button>
 
   </body>
 </html>
