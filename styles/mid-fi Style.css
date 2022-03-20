@@ -7,7 +7,7 @@ html, body {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     font-family: 'Montserrat', sans-serif;
     margin: 0%;
 }
@@ -34,6 +34,7 @@ h2 {
 }
 
 h3 {
+    white-space: normal;
     padding: 1%;
     font-size: 24pt;
     font-weight: 200;
@@ -49,6 +50,7 @@ h4 {
 }
 
 h5 {
+    white-space: normal;
     padding: 1%;
     font-size: 14pt;
     font-weight: 300;
@@ -75,19 +77,38 @@ a {
 .blackText {
     color: rgb(0, 0, 0);
 }
-.project {
-    display: none;
-}
+
+#project_viewerport .box {
+    width:1600px;
+    height:100vh;
+    display:inline-block;
+    position:relative;
+    /* Snap to center */
+	scroll-snap-align: start;
+	
+	/* Always snap */
+	scroll-snap-stop: always;
+  }
 
 #project_viewerport {
-    display: flex;
-    background-color: transparent;
-    background-position: center;
-    background-size: contain;
-    height: 65%;
+    height: 130vh;
     margin: auto;
-    justify-content: center;
-    align-items: center;
+    overflow-y:scroll;
+    overflow-x:hidden;
+
+    /* Moves viewport to right position */
+    transform: rotate(270deg) translateX(-60%) translateY(35vh);
+    transform-origin: top left;
+
+    /* Make the scrolling snap */
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+}
+
+#scroll-container {
+    transform: rotate(90deg) translateY(-120vh);
+    transform-origin: top left;
+    white-space:nowrap;
 }
 
 .project_thumbnail {
@@ -97,10 +118,9 @@ a {
 
 .project_description {
     position: absolute;
-    left: 20%;
-    top: 60%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    left: 5%;
+    top: 50%;
+    transform: translateY(-100%);
     width: 400px;
 }
 
@@ -120,131 +140,6 @@ a {
     from {opacity: .4}
     to {opacity: 1}
   }
-
-#nav_bar {
-    position: absolute;
-    width: 100%;
-    bottom: 75px;
-    background-color: rgba(184, 220, 234, 0.63);
-    height: auto;
-}
-
-.table {
-    display: table;
-    margin: 0 auto;
-    padding: 0.5%;
-    width: 100%;
-    scroll-snap-align: y mandatory;
-}
-
-.button_fade {
-    scroll-snap-align: start;
-}
-
-ul {
-    text-align: center;
-    width: 100%;
-}
-
-li {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0 2.5% 0 2.5%;
-}
-
-ul button:only-of-type {
-    font-family: 'Montserrat', sans-serif;
-    padding: 5%;
-    font-size: 14pt;
-    font-weight: 300;
-    color: black;
-    border: 1.5px solid rgba(56, 88, 120, 255);;
-    background-color: transparent;
-    text-align: center;
-    line-height: 20px;
-    height: 60px;
-    width: 200px;
-    white-space: normal;
-    transition: 0.25s;
-}
-
-ul button:only-of-type:hover, ul button:only-of-type:focus {
-    border: inset 0 0 0 2em var(--hover);
-    color:aliceblue;
-    background-color: rgba(77, 148, 200, 0.57);
-}
-
-#externalLinks {
-    background-color: transparent;
-    transition: 0.25s;
-    position: absolute;
-    bottom: 1.5%;
-    right: 2%;
-}
-
-#linked {
-    border: none;
-    background-color: transparent;
-    background-image: url(../images/linkedin_White.png);
-    background-size: cover;
-    width: 70px;
-    height: 70px;
-    transition: 0.25s;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-#linked:hover, #linked:focus {
-    background-image: url(../images/linkedin_Blue.png);
-}
-
-#insta {
-    border: none;
-    background-color: transparent;
-    background-image: url(../images/instagram_White.png);
-    background-size: cover;
-    width: 70px;
-    height: 70px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-#insta:hover, #insta:focus {
-    background-image: url(../images/instagram_Blue.png);
-}
-
-#art {
-    border: none;
-    background-color: transparent;
-    background-image: url(../images/artstation_White.png);
-    background-size: cover;
-    width: 70px;
-    height: 70px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-#art:hover, #art:focus {
-    background-image: url(../images/artstation_Blue.png);
-}
-
-#contact {
-    font-family: 'Montserrat', sans-serif;
-    padding: 0.5%;
-    font-size: 18pt;
-    font-weight: 300;
-    color: aliceblue;
-    border: 0px;
-    background-color: transparent;
-    transition: 0.25s;
-    position: absolute;
-    bottom: 1.5%;
-    left: 2%;
-}
-
-#contact:hover, #contact:focus {
-    color:rgb(0, 0, 0);
-}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
