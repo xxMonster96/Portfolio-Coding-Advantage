@@ -83,7 +83,7 @@ a {
     height:100vh;
     display:inline-block;
     position:relative;
-    /* Snap to center */
+    /* Snap to start */
 	scroll-snap-align: start;
 	
 	/* Always snap */
@@ -121,7 +121,7 @@ a {
     left: 5%;
     top: 50%;
     transform: translateY(-100%);
-    width: 400px;
+    width: 350px;
 }
 
 .fade {
@@ -129,17 +129,171 @@ a {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-  }
+}
   
-  @-webkit-keyframes fade {
+@-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-  }
+}
   
-  @keyframes fade {
+@keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-  }
+}
+
+#nav_bar {
+    position: absolute;
+    width: 100%;
+    bottom: 110px;
+    background-color: rgba(184, 220, 234, 0.63);
+    height: auto;
+}
+
+.buttons_navigate_right {
+    width: 0;
+    height: 0;
+    border-left: 50px solid rgb(255, 255, 255);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    background-color: transparent;
+    transition: 0.25s;
+    margin: 0%;
+    position: absolute;
+    top: 45%;
+    right: 11%;
+}
+
+.buttons_navigate_left {
+    width: 0;
+    height: 0;
+    border-right: 50px solid rgb(255, 255, 255);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    background-color: transparent;
+    border-style: solid;
+    transition: 0.25s;
+    margin: 0%;
+    position: absolute;
+    top: 45%;
+    left: 11%;
+}
+
+.table {
+    display: table;
+    margin: 0 auto;
+    padding: 0.5%;
+    width: 100%;
+    scroll-snap-align: y mandatory;
+}
+
+.button_fade {
+    scroll-snap-align: start;
+}
+
+ul {
+    text-align: center;
+    width: 100%;
+}
+
+li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 2.5% 0 2.5%;
+}
+
+ul button:only-of-type {
+    font-family: 'Montserrat', sans-serif;
+    padding: 5%;
+    font-size: 14pt;
+    font-weight: 300;
+    color: black;
+    border: 1.5px solid rgba(56, 88, 120, 255);;
+    background-color: transparent;
+    text-align: center;
+    line-height: 20px;
+    height: 60px;
+    width: 200px;
+    white-space: normal;
+    transition: 0.25s;
+}
+
+ul button:only-of-type:hover, ul button:only-of-type:focus {
+    border: inset 0 0 0 2em var(--hover);
+    color:aliceblue;
+    background-color: rgba(77, 148, 200, 0.57);
+}
+
+#externalLinks {
+    background-color: transparent;
+    transition: 0.25s;
+    position: absolute;
+    bottom: 1.5%;
+    right: 2%;
+}
+
+#linked {
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/linkedin_White.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    transition: 0.25s;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#linked:hover, #linked:focus {
+    background-image: url(../images/linkedin_Blue.png);
+}
+
+#insta {
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/instagram_White.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#insta:hover, #insta:focus {
+    background-image: url(../images/instagram_Blue.png);
+}
+
+#art {
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/artstation_White.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#art:hover, #art:focus {
+    background-image: url(../images/artstation_Blue.png);
+}
+
+#contact {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5%;
+    font-size: 18pt;
+    font-weight: 300;
+    color: aliceblue;
+    border: 0px;
+    background-color: transparent;
+    transition: 0.25s;
+    position: absolute;
+    bottom: 1.5%;
+    left: 2%;
+}
+
+#contact:hover, #contact:focus {
+    color:rgb(0, 0, 0);
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
