@@ -64,21 +64,127 @@ h6 {
     font-weight: 400;
 }
 
-#Header {
-    vertical-align: middle;
+a {
+    color: rgba(0,152,167,255);
+    font-size: 16pt;
+    font-weight: 500;
 }
 
-#reset {
-    display: inline-block;
-    vertical-align: top;
+.descriptionTitle {
+    color: rgb(0, 152, 167);
 }
 
-#backButton {
-    padding: 3%;
-    background-color: rgb(138, 221, 69);
+.blackText {
+    color: rgb(0, 0, 0);
 }
 
-#backButton button:only-of-type {
+#project_viewerport .box {
+    width:2000px;
+    display:inline-block;
+    position:relative;
+    transform: translateY(55vh);
+}
+
+#project_viewerport {
+    height: 195vh;
+    width: 33%;
+    margin: auto;
+    overflow:hidden;
+
+    /* Moves viewport to right position */
+    transform: rotate(270deg) translateX(-100%) translateY(-65.5vh);
+    transform-origin: top left;
+}
+
+#project-scroll-container {
+    transform: rotate(90deg) translateY(-120vh);
+    transform-origin: top left;
+    white-space:nowrap;
+}
+
+.project_thumbnail {
+    float: right;
+    min-height: 64vh;
+    max-height: 64vh;
+    padding-right: 5%;
+}
+
+.project_description {
+    clear: right;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-120%);
+    width: 1000px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+#nav_bar .box {
+    height: 5vh;
+    width: 210vh;
+    display:inline-block;
+    position:relative;
+    transform: translateY(102vh);
+    /* Snap to start */
+	scroll-snap-align: start;
+	
+	/* Always snap */
+	scroll-snap-stop: always;
+}
+
+#nav_bar {
+    position: absolute;
+    height: 202.5vh;
+    width: 11vh;
+    background-color: rgba(184, 220, 234, 0.63);
+    margin: auto;
+    overflow-y:scroll;
+    overflow-x:hidden;
+
+    /* Moves viewport to right position */
+    transform: rotate(270deg) translateX(1060%);
+    transform-origin: top left;
+
+    /* Make the scrolling snap */
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#nav_bar::-webkit-scrollbar {
+    display: none;
+}
+
+#nav-scroll-container {
+    
+    transform: rotate(90deg) translateY(-110vh);
+    transform-origin: top left;
+    white-space:nowrap;
+}
+
+.navbar_items {
+    padding: 0px 5% 0px 5%;
+}
+
+button {
     font-family: 'Montserrat', sans-serif;
     padding: 0%;
     font-size: 14pt;
@@ -92,12 +198,102 @@ h6 {
     width: 200px;
     white-space: normal;
     transition: 0.25s;
-    display: inline-block;
-    margin: 1% auto;
 }
 
 button:hover, button:focus {
     border: inset 0 0 0 2em var(--hover);
     color:aliceblue;
     background-color: rgba(77, 148, 200, 0.57);
+}
+
+#externalLinks {
+    background-color: transparent;
+    transition: 0.25s;
+    position: absolute;
+    bottom: 1.5%;
+    right: 2%;
+}
+
+#linked {
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/linkedin_White.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    transition: 0.25s;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#linked:hover, #linked:focus {
+    background-image: url(../images/linkedin_Blue.png);
+}
+
+#insta {
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/instagram_White.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#insta:hover, #insta:focus {
+    background-image: url(../images/instagram_Blue.png);
+}
+
+#art {
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/artstation_White.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#art:hover, #art:focus {
+    background-image: url(../images/artstation_Blue.png);
+}
+
+#contact {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5%;
+    font-size: 18pt;
+    font-weight: 300;
+    color: aliceblue;
+    border: 0px;
+    background-color: transparent;
+    transition: 0.25s;
+    position: absolute;
+    bottom: 1.5%;
+    left: 2%;
+}
+
+#contact:hover, #contact:focus {
+    color:rgb(0, 0, 0);
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
 }

@@ -79,28 +79,25 @@ a {
 }
 
 #project_viewerport .box {
-    width:1600px;
-    height:100vh;
-    display:inline-block;
+    width:1900px;
+    height: 78vh;
+    display:block;
     position:relative;
-    transform: translateY(55vh);
 
     /* Snap to start */
-	scroll-snap-align: start;
+	scroll-snap-align: center;
 	
 	/* Always snap */
 	scroll-snap-stop: always;
 }
 
 #project_viewerport {
-    height: 130vh;
-    width: 33%;
+    height: 78vh;
+    width: 90%;
     margin: auto;
-    overflow-y:scroll;
-    overflow-x:hidden;
+    overflow:scroll;
 
     /* Moves viewport to right position */
-    transform: rotate(270deg) translateX(-100%) translateY(-32.5vh);
     transform-origin: top left;
 
     /* Make the scrolling snap */
@@ -117,22 +114,39 @@ a {
 }
 
 #project-scroll-container {
-    transform: rotate(90deg) translateY(-120vh);
     transform-origin: top left;
     white-space:nowrap;
 }
 
 .project_thumbnail {
-    min-height: 64vh;
-    max-height: 64vh;
+    float: right;
+    min-height: 50vh;
+    max-height: 50vh;
+    padding-right: 0%;
+    padding-top: 5%;
+}
+
+.project_thumbnail_left {
+    float: left;
+    min-height: 50vh;
+    max-height: 50vh;
+    padding-right: 0%;
+    padding-top: 5%;
 }
 
 .project_description {
-    position: absolute;
+    clear: right;
     left: 5%;
     top: 50%;
-    transform: translateY(-100%);
-    width: 350px;
+    transform: translateY(-120%);
+    width: 1000px;
+}
+
+.project_description_right {
+    clear: left;
+    top: 50%;
+    transform: translateY(-120%) translateX(80%);
+    width: 1000px;
 }
 
 .fade {
@@ -175,7 +189,7 @@ a {
     overflow-x:hidden;
 
     /* Moves viewport to right position */
-    transform: rotate(270deg) translateX(470%);
+    transform: rotate(270deg) translateX(0%);
     transform-origin: top left;
 
     /* Make the scrolling snap */
